@@ -55,36 +55,16 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
 }
 
-/* ဇယား (Table) အတွက် style များ */
-table {
+/* ဇယား (iframe) အတွက် style များ */
+#timetable-iframe {
     width: 100%;
-    border-collapse: collapse; /* ဇယားမျဉ်းတွေကို ပူးကပ်အောင်လုပ်ခြင်း */
-    margin: 20px 0;
-}
-
-/* ဇယား ခေါင်းစဉ် (table header) အတွက် style များ */
-thead th {
-    background-color: #66bb6a; /* ခေါင်းစဉ် background အရောင် (အစိမ်းရောင်) */
-    color: white; /* ခေါင်းစဉ်စာလုံး အရောင် */
-    padding: 15px;
-    text-align: left;
-    border-bottom: 2px solid #5a5a5a;
-    font-size: 1.1em;
-}
-
-/* ဇယား အချက်အလက် (table data) အတွက် style များ */
-tbody td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd; /* အောက်မျဉ်းအရောင် */
-    border-right: 1px solid #ddd; /* ညာဘက်မျဉ်းအရောင် */
-    vertical-align: top;
-}
-
-/* ဇယားရဲ့ စုံဂဏန်း နေရာတွေကို နောက်ခံအရောင်ပြောင်းလဲခြင်း */
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    height: 80vh; /* ဖုန်းနဲ့ ကွန်ပျူတာမှာ အမြင်လှစေရန် */
+    max-width: 1200px;
+    border: none; /* iframe ရဲ့ အနားသတ်မျဉ်းကို ဖျက်ခြင်း */
 }
 
 /* Footer (အောက်ခြေ) အတွက် style များ */
