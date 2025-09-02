@@ -1,14 +1,21 @@
+/* Google Fonts ကနေ Noto Sans Myanmar font ကို ထည့်သွင်းဖို့အတွက် import လုပ်ခြင်း */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&display=swap');
+
+/* Webpage တစ်ခုလုံးအတွက် အခြေခံ style များ */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+    /* မြန်မာစာလုံး ပေါ်အောင် font-family ကို သတ်မှတ်ခြင်း */
+    font-family: 'Noto Sans Myanmar', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold; /* စာသားအားလုံးကို bold လုပ်ရန် */
+    background-color: #f4f7f6; /* နောက်ခံအရောင် */
+    color: #333; /* စာလုံးအရောင် */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.6; /* စာကြောင်းအကွာအဝေး */
 }
 
+/* Header (ခေါင်းစီး) အတွက် style များ */
 header {
-    background-color: #4CAF50;
+    background-color: #007bff; /* ခေါင်းစဉ် background အရောင် (အပြာရောင်) */
     color: white;
     padding: 20px;
     text-align: center;
@@ -24,6 +31,7 @@ nav {
     margin-top: 10px;
 }
 
+/* Level ရွေးတဲ့ drop-down box အတွက် style များ */
 #level-selector {
     padding: 10px 15px;
     font-size: 16px;
@@ -34,44 +42,52 @@ nav {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Main Content (အဓိက အကြောင်းအရာနေရာ) အတွက် style များ */
 main {
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
 }
 
+/* Timetable ဇယားကို ထည့်သွင်းမယ့် container အတွက် style များ */
 #timetable-container {
-    overflow-x: auto;
+    overflow-x: auto; /* ဖုန်းကြည့်ရင် ဘေးဘက်ရွှေ့လို့ရအောင်လုပ်ခြင်း */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* ဇယား (Table) အတွက် style များ */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* ဇယားမျဉ်းတွေကို ပူးကပ်အောင်လုပ်ခြင်း */
     margin: 20px 0;
 }
 
+/* ဇယား ခေါင်းစဉ် (table header) အတွက် style များ */
 thead th {
-    background-color: #e8e8e8;
-    color: #555;
+    background-color: #66bb6a; /* ခေါင်းစဉ် background အရောင် (အစိမ်းရောင်) */
+    color: white; /* ခေါင်းစဉ်စာလုံး အရောင် */
     padding: 15px;
     text-align: left;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #5a5a5a;
     font-size: 1.1em;
 }
 
+/* ဇယား အချက်အလက် (table data) အတွက် style များ */
 tbody td {
     padding: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd; /* အောက်မျဉ်းအရောင် */
+    border-right: 1px solid #ddd; /* ညာဘက်မျဉ်းအရောင် */
     vertical-align: top;
 }
 
+/* ဇယားရဲ့ စုံဂဏန်း နေရာတွေကို နောက်ခံအရောင်ပြောင်းလဲခြင်း */
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Footer (အောက်ခြေ) အတွက် style များ */
 footer {
     text-align: center;
     padding: 20px;
