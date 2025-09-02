@@ -14,25 +14,31 @@
     <header>
         <h1>ကျောင်းအချိန်ဇယား</h1>
         <nav>
-            <select id="level-selector" onchange="loadTimetable(this.value)">
-                <option value="timetable-1A.csv">Level 1 A</option>
-                <option value="timetable-1B.csv">Level 1 B</option>
-                <option value="timetable-L2.csv">Level 2</option>
-                <option value="timetable-L3.csv">Level 3</option>
-                <option value="timetable-L3-junior.csv">Level 3 (Junior)</option>
+            <select id="level-selector" onchange="showTimetable(this.value)">
+                <option value="https://docs.google.com/spreadsheets/d/e/2PACX-1vRocs-ZTnYCIou7q_ZL_6ComyQ-2ELDIwJ7U3zlx4bWwYXeOCqgwcew_SCjjfjlBQ/pubhtml?widget=true&amp;headers=false">Level 1 A</option>
+                <option value="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkDAkPOSZ8j-UDXv1oMKbs9N4u3f9Gd4cJk92HApxQqhML_QdTC-pdkhBWKNMSBw/pubhtml?widget=true&amp;headers=false">Level 1 B</option>
+                <option value="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQyRFfy7yKGONAQdqPZopJTIkT1IetrwImkJ1qaJw5buZ0deJBK_th3Ek-MjAucw/pubhtml?widget=true&amp;headers=false">Level 2</option>
+                <option value="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6g-qdWP2DQ8-HDR7Zcw7aZu9StehJY7TJCAyrF5JH6J98LK9ik9wAp_iC8f1xbA/pubhtml?widget=true&amp;headers=false">Level 3</option>
+                <option value="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9AwvFTHHjQs3pRxxSxdFHDIM8VGPXpf4xenS-YoRSvhCXDbqr8X2FHsrNFMnfOA/pubhtml?widget=true&amp;headers=false">Level 3 (Junior)</option>
             </select>
         </nav>
     </header>
 
     <main>
         <div id="timetable-container">
-            </div>
+            <iframe id="timetable-iframe" src="YOUR_DEFAULT_GOOGLE_SHEETS_URL" frameborder="0"></iframe>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 - ကျောင်းအချိန်ဇယား</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function showTimetable(url) {
+            // Drop-down မှာ ရွေးလိုက်တဲ့ URL အတိုင်း iframe ရဲ့ src ကို ပြောင်းလဲပေးမှာပါ
+            document.getElementById('timetable-iframe').src = url;
+        }
+    </script>
 </body>
 </html>
