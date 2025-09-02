@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ကျောင်းအချိန်ဇယား</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ကျောင်းအချိန်ဇယား</h1>
+        <nav>
+            <select id="level-selector" onchange="loadTimetable(this.value)">
+                <option value="timetable-1A.csv">Level 1 A</option>
+                <option value="timetable-1B.csv">Level 1 B</option>
+                <option value="timetable-L2.csv">Level 2</option>
+                <option value="timetable-L3.csv">Level 3</option>
+                <option value="timetable-L3-junior.csv">Level 3 (Junior)</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <div id="timetable-container">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - ကျောင်းအချိန်ဇယား</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
